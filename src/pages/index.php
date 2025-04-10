@@ -1,0 +1,1 @@
+<?php include_once '../componnents/header.php'; ?>
