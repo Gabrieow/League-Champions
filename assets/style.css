@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Spiegel', serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #0A323C;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'Beaufort';
+    src: url('assets/fonts/BeaufortforLOL.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spiegel';
+    src: url('assets/fonts/spiegel.ttf') format('opentype');
+}
+
+/* ------ HEADER ------ */
+
+header{
+    background: #091428; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+}
+
+header a{
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 20px;
+    margin: 20px;
+}
+
+#header-left-text, #header-right-text, #header-logout-text{
+    color: #F0E6D2;
+}
+
+#header-left-text:hover, #header-right-text:hover{
+    color: #5B5A56;
+}
+
+#header-mid-text{
+    color: #C89B3C;
+    font-family: "Beaufort", serif;
+
+}
+
+#header-logout-text:hover{
+    color: #005A82;
+}
+
+/* ------ FOOTER ------ */
+
+footer{
+    text-align:center; 
+    padding: 15px; 
+    background: #091428;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer p{
+    color: #F0E6D2;
+}
+
+/* ------ TELA DE LOGIN ------ */
+
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    border: 1px solid #463714;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #5a471a;
+    text-align: center;
+    color: #091428;
+    background-color: #C89B3C; 
+}
+.login-box h2 {
+    margin-bottom: 20px;
+}
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #463714;
+}
+.login-box button {
+    padding: 10px 20px;
+    background: #463714;
+    color: #F0E6D2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-box button:hover {
+    background: #5a471a;
+}
+
+/* ------ INDEX ------ */
+
+#index-texto-principal{
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+    color: #F0E6D2;
+    font-weight: bold;
+    font-family: "Beaufort", serif;
+}
+
+/* ------ CARDS INTERATIVOS INDEX ------*/
+
+#section-cardChamp{
+    display: flex; 
+    flex-direction: column; 
+    gap: 50px;
+}
+
+.card-campeao {
+    border: 1px solid #C89B3C;
+    border-radius: 10px;
+    background: #C89B3C;
+    overflow: hidden;
+    color:#0A1428;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+.card-campeao:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out
+}
+
+
+/* Esconde o checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Estilo do cabeçalho clicável */
+.cabecalho {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-family: "Beaufort", serif;
+    font-size: 15px;
+}
+
+.cabecalho h3 {
+    margin: 10px 0;
+}
+
+/* Descrição fechada por padrão */
+.descricao {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    background: #463714;
+    color:#F0E6D2;
+    line-height: 1.2;
+}
+
+/* Quando o checkbox está marcado, expande a descrição */
+.toggle-checkbox:checked + .cabecalho + .descricao {
+    max-height: 300px;
+    padding: 15px;
+}
+
+.card-campeao .cabecalho img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out; 
+}
+
+.toggle-checkbox:checked ~ .cabecalho img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    transition: 0.5s ease-in-out; 
+}
+
+.container-index {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20 20px;
+    border: 2px solid #463714;
+    background: #1E282D;
+}
+
+#main-index{
+    background: #0A323C;
+}
+
+/* ------ ÁREA DE BUSCA INDEX ------ */
+
+.form-busca {
+    text-align: right;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.input-busca {
+    padding: 5px;
+    width: 150px;
+    border: 1px solid #C89B3C;
+    background-color: #091428;
+    color: #F0E6D2;
+}
+
+.btn-busca {
+    padding: 5px 15px;
+    background-color: #C89B3C;
+}

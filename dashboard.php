@@ -12,3 +12,5 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
 <?php include 'includes/header.php'; ?>
 <!-- conteúdo da página -->
 <?php include 'includes/footer.php'; ?>
+
+<link rel="stylesheet" href="assets/style.css"> 
