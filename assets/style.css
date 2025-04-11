@@ -20,12 +20,12 @@ body{
 
 @font-face {
     font-family: 'Beaufort';
-    src: url('assets/fonts/BeaufortforLOL.ttf') format('truetype');
+    src: url('fonts/BeaufortforLOL.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Spiegel';
-    src: url('assets/fonts/spiegel.ttf') format('opentype');
+    src: url('fonts/spiegel.ttf') format('opentype');
 }
 
 /* ------ HEADER ------ */
