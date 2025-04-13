@@ -15,7 +15,7 @@ if ($busca !== '') {
     $campeoesTotais = array_filter($campeoesTotais, function ($c) use ($busca) {
         $nome = strtolower($c['nome']);
 
-        // se for array ele procura separando tudo por ',', se for classe procura pela string
+        // se for array de classes ele procura separando tudo por ',', se for só 1 classe ele procura pela string
         $classe = is_array($c['classe']) 
             ? implode(', ', array_map('strtolower', $c['classe'])) 
             : strtolower($c['classe']);
@@ -52,6 +52,7 @@ if ($busca !== '') {
                             <p><?= htmlspecialchars($c['descricao']) ?></p>
                             <br>
                             <h3>Classe: <?= is_array($c['classe']) 
+                                // aq ele verifica se é array ou string, se for array ele separa com ',' e se for só 1 classe ele mostra a string
                                 ? htmlspecialchars(implode(', ', $c['classe'])) 
                                 : htmlspecialchars($c['classe']) ?>
                             </h3>
