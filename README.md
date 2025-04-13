@@ -18,12 +18,12 @@ Vídeo demonstrando o projeto: [Clique Aqui](https://www.youtube.com/watch?v=wyI
 
 Primeiro, faça o download do repositório. Depois, abra-o em sua IDE e digite o seguinte comando no Terminal:
 
-'''
+```
 php -S localhost:8000
-'''
+```
 
 Após isso, acesse o site "http://localhost:8000/" em seu navegador (ou, [Clique Aqui](http://localhost:8000/))
 
 ***
 
-## Projeto Desenvolvido por Edson Veloso & Gabriel Henrique
+Projeto Desenvolvido por Edson Veloso & Gabriel Henrique
