@@ -26,5 +26,4 @@ Após isso, acesse o site "http://localhost:8000/" em seu navegador (ou, [Clique
 
 ***
 
-## Projeto Desenvolvido por:
-Edson Veloso & Gabriel Henrique
+## Projeto Desenvolvido por Edson Veloso & Gabriel Henrique
